@@ -5,6 +5,7 @@
   <title>National Lottery Dublin Marathon 2011 - Monday 31st October, 10am</title>
   <link rel="stylesheet" type="text/css" href="./css/style.css">
   <link rel="stylesheet" type="text/css" href="./css/jquery.lightbox-0.4.css" media="screen">
+  <link media="screen" rel="stylesheet" href="./css/colorbox.css" />
   <style type="text/css" style="display: none !important;"></style>
   <style>
 	#feedback { font-size: .8em; }
@@ -20,14 +21,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
   <script src="./js/jquery.lightbox-0.4.pack.js"></script>
-  
+  <script src="./js/jquery.colorbox-min.js"></script>
   <script type="text/javascript">
   $(function() {
-      $( "#selectable" ).selectable();
-	  $('a.lightbox').lightBox();
+      
+	  $("a[rel='colorbox']").colorbox();
   });
   </script>
-
+<!-- $( "#selectable" ).selectable(); -->
   
 <style type="text/css">@media print { #feedlyMiniIcon { display: none; } }</style><link rel="stylesheet" type="text/css" href="chrome-extension://cgndfbhngibokieehnjhbjkkhbfmhojo/css/validation.css"></head>
 
@@ -40,9 +41,9 @@
       <nav>
         <ul> 
           <li id="nav-home"><a href="http://dublinmarathon.ie/index.php">Home</a></li>
-          <li id="nav-general"><a href="http://dublinmarathon.ie/general_info.php">General&nbsp;info</a></li>
+          <li id="nav-general"><a href="http://dublinmarathon.ie/general_info.php">General Info</a></li>
           <li id="nav-raceseries"><a href="http://dublinmarathon.ie/race_series.php">Race Series</a></li>
-          <li id="nav-entry"><a href="http://dublinmarathon.ie/entry_details.php">Entry&nbsp;details</a></li> 
+          <li id="nav-entry"><a href="http://dublinmarathon.ie/entry_details.php">Entry Details</a></li> 
           <li id="nav-results"><a href="http://dublinmarathon.ie/results.php">Results</a></li>
           <li id="nav-certs"><a href="http://dublinmarathon.ie/certificate.php">Certificates</a></li>
           <li id="nav-mission"><a href="http://dublinmarathon.ie/mission.php">Mission 2012</a></li>
@@ -70,7 +71,7 @@
         <h2>Dublin Marathon Archives</h2>
         <ol id="selectable">
 			<li class="ui-state-default">
-				<div>1980<img width="80" height="80" src="./img/1980/IMG_0001.jpg"></div>
+				<div><a rel="colorbox" href="./img/1980/IMG_0001.jpg"><img width="80" height="80" src="./img/1980/IMG_0001.jpg">1980</a></div>
 			</li>
 			<li class="ui-state-default">
 				<div>1981<img width="80" height="80" src="./img/1981/IMG_0002.jpg"></div>
